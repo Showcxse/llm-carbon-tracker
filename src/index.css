@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+@theme {
+  --color-primary-white: #E6E8E3;
+  --color-primary-off-white: #DDDAD5;
+  --color-primary-offer-white: #C1C6B9;
+  --color-primary-green: #6AC878;
+  --color-primary-dark: #2A2722;
+  --font-primary: 'Oxygen', sans-serif;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* WHY DO I HAVE TO MAKE SLICK MANUALLY IT'S SUPPOSED TO WORK OUT OF THE BOX */
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.App {
+  background-color: var(--color-primary-white);
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
