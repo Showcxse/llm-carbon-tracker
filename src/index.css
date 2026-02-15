@@ -5,7 +5,11 @@
   --color-primary-white: #E6E8E3;
   --color-primary-off-white: #DDDAD5;
   --color-primary-offer-white: #C1C6B9;
-  --color-primary-green: #6AC878;
+  --color-primary-green: hsl(129, 46%, 60%);
+  /* FOR EXPERIMENTAL GRADIENT PURPOSES */
+  --hue-primary-green: 129;
+  --saturation-primary-green: 46%;
+  --lightness-primary-green: 60%;
   --color-primary-dark: #2A2722;
   --font-primary: 'Oxygen', sans-serif;
 }
@@ -15,7 +19,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-33.33%);
   }
 }
 
