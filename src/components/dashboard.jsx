@@ -12,16 +12,24 @@ const Dashboard = () => {
   return (
     <>
       {/*WRAP THIS FAKA IN AN ERROR BOUNDARY */}
-      <main className="dashboardWrapper relative py-20 px-6 min-h-screen bg-primary-off-white overflow-hidden">
+      <main className="dashboardWrapper relative py-20 px-6 min-h-screen bg-primary-off-white">
           {/*MORE BLOBS SIR */}
         <div className="absolute top-[-10%] right-[-5%] w-125 h-125 bg-primary-green/20 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-green/10 rounded-full blur-[75px] pointer-events-none"></div>
         <div className="absolute bottom-[20%] left-[-5%] w-100 h-100 bg-emerald-400/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute top-[30%] left-[10%] w-80 h-80 bg-primary-green/15 rounded-full blur-[90px] pointer-events-none"></div>
 
-        <div>
-          <h2 className="text-6xl font-bold text-primary-dark text-center mb-8 leading-normal uppercase">Prompt Emission Analysis</h2>
+        <div className="mb-8 flex flex-col md:flex-row lg:flex-col md:items-end lg:items-center justify-between items-center gap-4">
+          <div>
+          <h2 className="text-5xl lg:text-6xl font-black text-primary-dark text-center mb-8 tracking-tight">Emissions <span className="text-primary-green">Analysis</span></h2>
+          <p className="text-md text-gray-500 text-center font-medium">Estimate the carbon footprint of your AI workflows</p>
+          </div>
+          <div className="flex items-center gap-2 px-3 py-1 bg-primary-white/50 backdrop-blur-sm border border-black/5 rounded-full shadow-sm">
+          <div className="w-2 h-2 bg-primary-green rounded-full animate-pulse"></div>
+          <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Last Synced: DATE{ /* MAKE THIS FUNCTIONAL */ }</span>
+          </div>
         </div>
+        
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/*PROMPT INPUT*/}
@@ -122,6 +130,16 @@ const Dashboard = () => {
               </p>
             </div>
           </div>
+      </div>
+      <div className="relative w-full py-12 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center" aria-hidden="true">
+          <div className="w-full border-t border-primary-dark/15"></div>
+        </div>
+        <div className="relative flex justify-center"> 
+          <span className="bg-primary-whte/80 backdrop-blur-md px-6 py-2 rounded-full border border-primary-dark/15 text-[10px] font-black uppercase tracking-widest text-gray-400 shadow-sm">
+          How it works:
+          </span>
+        </div>
       </div>
       </main>
     </>

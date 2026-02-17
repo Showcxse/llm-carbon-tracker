@@ -11,6 +11,8 @@ const navbar = () => {
         <li className='hover:text-primary-green transition-colors duration-300 cursor-pointer'>
           PROMPTS
           </li>
+        {/*IMPLEMENT THIS LATER FUTURE */}
+        <li>DARK MODE</li>
         <li className='self-end hover:text-primary-green transition-colors duration-300 cursor-pointer'>
           <a href="https://github.com/Showcxse/llm-carbon-tracker" target="_blank" rel="noopener noreferrer">
           {/*IM TOO LAZY TO MAKE THIS SHIT I JUST GOOGLED IT*/}
