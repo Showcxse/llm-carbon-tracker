@@ -1,9 +1,9 @@
-# LLM CARBON TRACKER --DUMB CATCHY NAME NOT THOUGHT OF YET
+# LLM CARBON TRACKER -- DUMB CATCHY NAME NOT THOUGHT OF YET
 
-    This is a personal project web-app that tracks the carbon output of AI/LLM Prompts.
+    This is a personal project / web-app / tool that tracks the carbon output of AI/LLM Prompts.
 
     I got the idea when one of my lecturers randomly mentioned that AI prompts do create a carbon output.
 
-    All Data is valid through 2025 and is pulled from the Electricity Maps API
+    All Data is valid through 2026 and is powered by the Electricity Maps API
 
     

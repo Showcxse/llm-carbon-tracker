@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Leaf, Cpu, Globe, Zap, Trees } from "lucide-react";
-import Dropdown from "./dropdown.jsx";
+import Dropdown from "./Dropdown.jsx";
 
 const Dashboard = () => {
   const [prompt, setPrompt] = useState("");

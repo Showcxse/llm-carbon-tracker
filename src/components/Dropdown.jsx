@@ -10,7 +10,7 @@ const Dropdown = ({ chosenModel, setChosenModel }) => {
     { id: "gemini-3-pro", name: "Gemini 3 Pro", provider: "Google" },
     { id: "deepseek-v3", name: "DeepSeek V3", provider: "DeepSeek" },
     { id: "grok-4-1", name: "Grok 4.1", provider: "XAI" },
-    { id: "llama-3-1", name: "Llama 3.1", provider: "Meta" },
+    { id: "llama-4", name: "Llama 4", provider: "Meta" },
   ];
 
   return (

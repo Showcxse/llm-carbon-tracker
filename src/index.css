@@ -3,13 +3,11 @@
 
 @theme {
   --color-primary-white: #E6E8E3;
+  --color-dark-mode-primary-white: #262824;
   --color-primary-off-white: #DDDAD5;
+  --color-dark-mode-primary-off-white: #2B2926;
   --color-primary-offer-white: #C1C6B9;
   --color-primary-green: hsl(129, 46%, 60%);
-  /* FOR EXPERIMENTAL GRADIENT PURPOSES */
-  --hue-primary-green: 129;
-  --saturation-primary-green: 46%;
-  --lightness-primary-green: 60%;
   --color-primary-dark: #2A2722;
   --font-primary: 'Oxygen', sans-serif;
 }

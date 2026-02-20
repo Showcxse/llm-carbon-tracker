@@ -1,9 +1,9 @@
 //import { useState } from 'react'
-import Hero from './components/hero.jsx'
-import Dashboard from './components/dashboard.jsx'
-import Footer from './components/footer.jsx'
-import Navbar from './components/navbar.jsx'
-import About from './components/about.jsx'
+import Hero from './components/Hero.jsx'
+import Dashboard from './components/Dashboard.jsx'
+import Footer from './components/Footer.jsx'
+import Navbar from './components/Navbar.jsx'
+import About from './components/About.jsx'
 
 function App() {
 

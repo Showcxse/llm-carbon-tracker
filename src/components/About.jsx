@@ -39,7 +39,7 @@ const About = () => {
                     </div>
                 </AboutGridCard>
                 <AboutGridCard title="Data Sources" icon={Database}>
-                    <p>Powered by the <strong>Electricity Maps API</strong> for live grid intensity and localized data center information for major AI providers </p>
+                    <p>Powered by the <a href="https://www.electricitymaps.com/" target="_blank" className='underline hover:text-primary-green transition-colors'><strong>Electricity Maps API</strong></a> for live grid intensity and localized data center information for major AI providers </p>
                 </AboutGridCard>
                 <AboutGridCard title="Accuracy" icon={Target}>
                     <p>These values are estimates for informational purposes and may not be perfectly accurate due to the complexity of AI infrastructure and regional variations in grid intensity.</p>
