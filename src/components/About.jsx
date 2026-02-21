@@ -10,7 +10,7 @@ import { Microscope, Database, Target } from 'lucide-react'
                 </div>
                 <h3 className='text-xl font-bold text-primary-dark leading-relaxed'>{title}</h3>
             </div>
-            <div className="text-sm text-gray-600 leading-relaxed">{children}</div>
+            <div className="text-sm text-gray-600 dark:text-slate-100 leading-relaxed">{children}</div>
         </div>
     );
 
@@ -46,9 +46,9 @@ const About = () => {
                 </AboutGridCard>
                 <div className="md:col-span-2 bg-linear-to-br from-primary-green to-emerald-600 text-primary-white p-8 rounded-3xl shadow-xl overflow-hidden group backdrop-blur-md border border-primary-white/70 hover:border-primary-white transition-all flex items-center justify-between">
                     <div className='max-w-[60%]'>
-                        <h3 className="text-xl font-bold text-primary-white mb-2">Sustainable AI</h3>
-                        <div className="w-16 h-1 bg-primary-white rounded-full mb-2"></div>
-                        <p className="text-sm text-primary-off-white">This tool aims to provide transparency and awareness about the environmental impact of AI operations, helping users make informed decisions about their AI usage.</p>
+                        <h3 className="text-xl font-bold text-primary-white dark:text-primary-dark mb-2">Sustainable AI</h3>
+                        <div className="w-16 h-1 bg-primary-white dark:bg-primary-dark rounded-full mb-2"></div>
+                        <p className="text-sm text-primary-off-white dark:text-slate-200">This tool aims to provide transparency and awareness about the environmental impact of AI operations, helping users make informed decisions about their AI usage.</p>
                     </div>
                     <img className='w-40 opacity-80' src={assets.ailazyart} alt="AI Illustration" />
                 <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-primary-white/80 rounded-3xl blur-3xl group-hover:bg-primary-white/90 transition-all"></div>

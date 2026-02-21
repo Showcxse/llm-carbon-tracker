@@ -3,7 +3,7 @@ import React from 'react'
 const footer = () => {
   return (
     <>
-    <footer className='footerWrapper relative bg-linear-to-t from-primary-white to-primary-off-white backdrop-blur-md border-t border-primary-dark text-md text-gray-700 text-center overflow-hidden'>
+    <footer className='footerWrapper relative bg-linear-to-t from-primary-white to-primary-off-white backdrop-blur-md border-t border-primary-dark text-md text-gray-700 dark:text-slate-200 text-center overflow-hidden'>
       <div className="absolute top-[-10%] right-[-5%] w-125 h-125 bg-primary-green/20 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-[20%] left-[-5%] w-100 h-100 bg-emerald-400/10 rounded-full blur-[100px] pointer-events-none"></div>
       <div className="max-w-6xl mx-auto flex justify-between items-center sm:flex-row gap-4 flex-wrap p-6">
@@ -34,7 +34,7 @@ const footer = () => {
           <div className="w-full border-t border-primary-dark/15"></div>
         </div>
         <div className="relative flex justify-center"> 
-          <span className="bg-primary-whte/80 backdrop-blur-md px-6 py-2 rounded-full border border-primary-dark/15 text-[10px] font-black uppercase tracking-widest text-gray-700 shadow-sm">
+          <span className="bg-primary-whte/80 backdrop-blur-md px-6 py-2 rounded-full border border-primary-dark/15 text-[10px] font-black uppercase tracking-widest text-gray-700 dark:text-slate-200 shadow-sm">
           <ul className='flex items-center gap-8'>
           <li>
             <a href="https://www.linkedin.com/in/casey-abbott-0148553a2" target='_blank' rel="noopener noreferrer">
@@ -53,7 +53,7 @@ const footer = () => {
               </svg>
             </a>
           </li>
-          <li className='m'>
+          <li>
             <a href="https://github.com/Showcxse/llm-carbon-tracker" target="_blank" rel="noopener noreferrer">
               <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ const footer = () => {
         </div>
       </div>
     {/* LEGAL SHIT (BOOOOOOO) IM DOING THIS LAST */}
-    <div className="flex flex-col items-center justify-center py-4 text-sm text-gray-700">
+    <div className="flex flex-col items-center justify-center py-4 text-sm text-gray-700 dark:text-slate-200">
       <p>&copy; 2026 Showcxse
         <br />
         Powered by the Electricity Maps API

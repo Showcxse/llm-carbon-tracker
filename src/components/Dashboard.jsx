@@ -9,6 +9,12 @@ const Dashboard = () => {
   }
   const [chosenModel, setChosenModel] = useState("PLACEHOLDER");
 
+  {/* 
+    FUNCTION: USER ENTERS PROMPT -> USER HITS CALCULATE -> STATS POPULATE THE CARDS 
+    SAVE PROMPTS AND PROMPT STATS TO FIREBASE
+    COULD DO SOMETHING WITH CUMULATIVE TOTALS
+  */}
+
   return (
     <>
       {/*WRAP THIS FAKA IN AN ERROR BOUNDARY */}
@@ -22,7 +28,7 @@ const Dashboard = () => {
         <div className="mb-8 flex flex-col md:flex-row lg:flex-col md:items-end lg:items-center justify-between items-center gap-4">
           <div>
           <h2 className="text-5xl lg:text-6xl font-black text-primary-dark text-center mb-8 tracking-tight">Emissions <span className="text-primary-green">Analysis</span></h2>
-          <p className="text-md text-gray-500 text-center font-medium">Estimate the carbon footprint of your AI workflows</p>
+          <p className="text-md text-gray-500 dark:text-slate-300 text-center font-medium">Estimate the carbon footprint of your AI workflows</p>
           </div>
           <div className="flex items-center gap-2 px-3 py-1 bg-primary-white/50 backdrop-blur-sm border border-black/5 rounded-full shadow-sm">
           <div className="w-2 h-2 bg-primary-green rounded-full animate-pulse"></div>
@@ -79,16 +85,17 @@ const Dashboard = () => {
           {/* THE LIVE STATS */}
 
           <div className="space-y-6">
-            <div className="bg-linear-to-br from-primary-green to-emerald-600 text-primary-white p-8 rounded-3xl shadow-xl overflow-hidden group backdrop-blur-md border border-primary-white/70">
+            <div className="bg-linear-to-br from-primary-green to-emerald-600 text-primary-white dark:text-primary-dark p-8 rounded-3xl shadow-xl overflow-hidden group backdrop-blur-md border border-primary-white/70">
               <div className="relative z-10">
-                <p className="text-primary-white text-sm font-bold uppercase tracking-widest mb-1">
+                {/*Okay yeah the naming with the light mode and dark mode colors is a little confusing in reference to what it actually does */}
+                <p className="text-primary-white dark:text-primary-dark text-sm font-bold uppercase tracking-widest mb-1">
                   Estimated CO<sub>2</sub>
                 </p>
                 <h2 className="text-4xl font-bold mb-1">
                   0.00 <span className="text-lg font-medium">grams</span>
                 </h2>
-                <div className="flex items-center gap-2 text-xs bg-primary-white/20 w-fit px-3 py-1 mt-2 rounded-full backdrop-blur-md">
-                  <Leaf aria-label="Carbon Impact Indicator"className="text-primary-white" size={16} />
+                <div className="flex items-center gap-2 text-xs bg-primary-white/20 dark:bg-primary-dark/20 w-fit px-3 py-1 mt-2 rounded-full backdrop-blur-md">
+                  <Leaf aria-label="Carbon Impact Indicator"className="text-primary-white dark:text-primary-dark" size={16} />
                   Low Impact
                 </div>
               </div>
